@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context="com.kumar.save_plus.kumar_lazy.feature_03_login_register.UserActivities.UserLoginActivity">
+
+    <TextView
+        android:id="@+id/tvUserLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="User Login"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+
+   <EditText
+       android:id="@+id/etUserName"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Username"
+       />
+    <EditText
+        android:id="@+id/etPassWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        />
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:onClick="userLogin"
+        />
+    <TextView
+        android:id="@+id/tvRegisterHERE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="if not registered? \nRegister Here"
+        android:textColor="@color/colorPrimary"/>
+
+
+</LinearLayout>

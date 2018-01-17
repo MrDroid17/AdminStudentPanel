@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AdminStudentPanel</string>
+
+    <string-array name="package_type">
+        <item>03</item>
+        <item>06</item>
+        <item>12</item>
+    </string-array>
+</resources>

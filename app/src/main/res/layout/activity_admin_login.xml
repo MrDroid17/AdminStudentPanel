@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context="com.kumar.save_plus.kumar_lazy.feature_03_login_register.admin.AdminLoginActivity">
+
+    <TextView
+        android:id="@+id/tvAdminLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Admin Login"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+
+    <EditText
+        android:id="@+id/etAdminUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Admin Username"
+        />
+    <EditText
+        android:id="@+id/etAdminPassWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Admin Password"
+        />
+    <Button
+        android:id="@+id/bAdminLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"/>
+</LinearLayout>

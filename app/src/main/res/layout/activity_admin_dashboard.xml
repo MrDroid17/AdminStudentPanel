@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="#eded"
+    tools:context="com.kumar.save_plus.kumar_lazy.feature_03_login_register.admin.AdminDashboard">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tvWelcomeMsg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:text="Welcome"
+            android:textColor="@color/colorAccent"
+            />
+        <TextView
+            android:id="@+id/tvAdminLogout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Logout"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorAccent"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin page"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:gravity="center_horizontal"
+        />
+    <LinearLayout
+        android:id="@+id/key_attribute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#eded"
+        android:layout_below="@+id/key_generator_title"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="4dp"
+            android:background="#ededed"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Select Package"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#000000"/>
+
+            <!--<RadioGroup
+                android:id="@+id/rgroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="#d6d6d6"
+                >
+                <RadioButton
+                    android:id="@+id/threeMonth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="03 Month"
+                    android:background="#ffffff"
+                    />
+                <RadioButton
+                    android:id="@+id/sixMonth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="06 Month"/>
+
+                <RadioButton
+                    android:id="@+id/twelveMonth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="12 Month"/>
+
+            </RadioGroup>-->
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+
+
+                />
+
+            <TextView
+                android:id="@+id/month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:text="Month"
+                android:gravity="start"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:background="#ededed"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="number of keys"
+                android:textColor="#000000"/>
+            <EditText
+                android:id="@+id/et_keyCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:inputType="number"
+                android:hint="keys count"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/key_attribute">
+
+        <Button
+            android:id="@+id/keyGenerator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generator"
+            android:onClick="keyGenerator"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_View"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#f8cbcd"
+
+        ></ListView>
+</LinearLayout>

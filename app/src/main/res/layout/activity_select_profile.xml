@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kumar.save_plus.kumar_lazy.feature_03_login_register.dialog.SelectProfile">
+
+
+    <RadioGroup
+        android:id="@+id/selectProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ededed"
+        android:layout_centerInParent="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Your Profile : "
+            android:textColor="#000000"
+            android:textAppearance="?android:textAppearanceLarge"/>
+        <RadioButton
+            android:id="@+id/selectAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:layout_gravity="center_horizontal"
+            android:onClick="selectProfile"/>
+
+        <RadioButton
+            android:id="@+id/selectUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User   "
+            android:layout_gravity="center_horizontal"
+            android:onClick="selectProfile"/>
+    </RadioGroup>
+</RelativeLayout>
