@@ -1,9 +1,20 @@
 # AdminStudentPanel
 
- ![](01.png)
+This Repo imitates the **Admin-Student Dashboard**. App is Divide in **Two Section** As Per user's profile:
+ - Admin
+ - User
+ 
+ Both Admin and User's profile are completely modular.One user can only be either Admin or normal user.
+---
+ | Select profile | Admin Page | User Page |
+| :------------------------------------: | :------------------------------------: | :-----------------------: |
+| ![](01.png ) | ![](02.png) | ![](06.png) |
 
 ---
-
+## About Admin profile:
+* ** Admin Login Details**
+ - Admin login details are **hardcoded** for now, Which can be changed later 
+   > admin username = sobhit2017  password = kumar2017
 * **Map Types:**
   * Normal Map
     > displays the default road map view. This is the default map type.
