@@ -12,23 +12,20 @@ This Repo imitates the **Admin-Student Dashboard**. App is Divide in **Two Secti
 
 ---
 ## About Admin profile:
-* ** Admin Login Details**
+* **Admin Login Details**
  - Admin login details are **hardcoded** for now, Which can be changed later 
    > admin username = sobhit2017  password = kumar2017
-* **Map Types:**
-  * Normal Map
-    > displays the default road map view. This is the default map type.
-  * Satellite
-    > displays Google Earth satellite images
-  * Hybrid
-    > displays a mixture of normal and satellite views
-    
----
-## for testing and better visibility Co- ordinate of New York is used which is:
-> New York, USA         **lat = 40.7484**,   **lng = -73.9857**
----
-## Admin:
-
+   
+* **Admin Dashboard page**
+ * **Package Types:**
+   * 03 month
+     > For 03 Month package you will generate **8 Character** long **Alphanumeric Authentication Key**
+   * 06 month
+     > For 06 Month package you will generate **10 Character** long **Alphanumeric Authentication Key**
+   * 12 month
+     > For 12 Month package you will generate **12 Character** long **Alphanumeric Authentication Key**
+  
+### SnapShots for Admin profile
 | Step 1- Select Package | Step 2- Enter no of Keys | Step 3- Generate Auth Keys |
 | :------------------------------------: | :------------------------------------: | :-----------------------: |
 | ![](03.png ) | ![](04.png) | ![](05.png) |
